@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4aa0b85c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>Quizee</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/9948/9948975.png" type = "images">
+</head>
+<body>
+        <a href="startPage.html">
+            <img src="logo.png" class = "logo">
+        </a>
+        <div class="container">
+            <h1>Oops I forgot your password!</h1>
+            <p>Enter your password to start the quiz.</p>
+            <input type="text" class = "name"  id = "pass" placeholder="Enter your password" required><br>
+            <button type = "button" class = "btn" onclick = "userPass()">Let's Go<i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+</body>
+<script>
+    
+let pass = document.getElementById("pass");
+
+function userPass(){
+    if(pass.value === ""){
+        alert("Please input your password");
+    }
+    else{
+        window.location.href = "loader.html";
+    }
+}
+
+</script>
+</html>

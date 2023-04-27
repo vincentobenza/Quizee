@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizee</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://kit.fontawesome.com/4aa0b85c61.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/9948/9948975.png" type = "images">
+</head>
+
+<body>
+   
+    <!--Home page-->
+    <a href="startPage.html">
+        <img src="logo.png" class = "logo">
+    </a>
+
+    <div class="startbtn">
+        <h1>Quizee Quiz</h1>
+        <p>Developed and build by Vincent.</p>
+        <button>Start</button>
+    </div>
+
+    <!--Rules of the quiz (information page)-->
+
+    <div class="infobox">
+        <div class="infotitle">
+            <h1>Some Rules for this Quiz</h1>
+        </div>
+        <div class="infolist">
+            <ol>
+                <li>In this quizlet once you  have selected  the answer it can't be change.</li>
+                <li>By clicking your answer it shows if your answer is right or wrong.</li>
+                <li>Green means correct, red means wrong.</li>
+                <li>You will get 1 points for each correct answer and deduct 1 point for every incorrect answer.</li>
+            </ol>
+        </div>
+        <div class="button">
+            <button class="quit">Exit</button>
+            <button class="restart">Begin<i class="fa-solid fa-arrow-right fa-beat"></i></button>
+        </div>
+
+    </div>
+
+    <!--Quix-Box-->
+
+    <div class="quizbox">
+        <header>
+            <div class="timer">
+                <div class="timevalue" id="timeleft"></div>
+            </div>
+        </header>
+        
+        <section>
+
+            <div class="ques">
+                <span id = "questionText">What does HTML stand for ?</span>
+            </div>
+            <div class="optionlist">
+                <div class="option" id="1" onclick="pressed(this.id)">
+                    Hyper Text Machine Language
+                </div>
+                <div class="option " id="2" onclick="pressed(this.id)">
+                    Hyper Text Markup Language
+                </div>
+                <div class="option" id="3" onclick="pressed(this.id)">
+                    Hyper Text Multiple Language
+                </div>
+                <div class="option" id="4" onclick="pressed(this.id)">
+                    Hyper Tool Markup Language
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="totalques">
+                <span>
+                    <p id="currquesno"> 2 </p> of <p id = "totalquesno">75</p> Questions
+                </span>
+            </div>
+            <button class="nextbtn">Next<i class="fa-solid fa-arrow-right"></i></button>
+        </footer>
+    </div>
+    <!--Result box-->
+
+    <div class="resultbox">
+
+        <div class="completetext">
+            <h1>Quiz Completed</h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/1872/1872241.png" alt="">
+        </div>
+
+        <div class="scoretext">
+            <span><p id="editscore"> 0 </p> / <p id = totalscore> 75 </p></span>
+            <p id = "averageTxt"></p>
+            <p id = "cgrTxt"></p>
+        </div>
+
+
+        <div class="buttongrp">
+            <button class="restart">Restart<i class="fa-solid fa-arrows-rotate"></i></button>
+            <button class="quit">Quit<i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+
+    </div>
+    <script src="quiz.js"></script>
+    <script src = "login.js"></script>
+</body>
+
+</html>

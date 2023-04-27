@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Kanit&family=Montserrat:wght@300&family=Poppins&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="startPage.css">
+    <script src="https://kit.fontawesome.com/4aa0b85c61.js" crossorigin="anonymous"></script>
+    <title>Quizee</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/9948/9948975.png" type = "images">
+</head>
+<body>
+
+  <a href="startPage.html">
+  <img src="logo.png" class = "logo">
+  </a>
+
+  <div class="row">
+    <div class="col col1">
+      <img src="https://cdn-icons-png.flaticon.com/512/136/136528.png" alt="">
+    </div>
+    <div class="col col2">
+      <img src="https://cdn-icons-png.flaticon.com/512/136/136527.png" alt="">
+    </div>
+    <div class="col col3">
+      <img src="https://cdn-icons-png.flaticon.com/512/136/136530.png" alt="">
+    </div>
+  </div>
+  
+  <div class="hero-text">
+    <h4>If you'll get a high score, you probably spend way too much time on google lol.</h4>
+    <p>There are 70 questions in this quiz and you must complete it or else...</p>
+    <a href="login.html">
+    <button type = "button" class = "btn" id = "btn">Get Started</button>
+    </a>
+  </div>
+
+  <footer>
+    <p id = "footer-text">Follow me for more+</p>
+    <div class="row-foot">
+      <div class="col-foot">
+        <a href="https://github.com/vincentobenza">
+        <i class="fa-brands fa-github"></i>
+        </a>
+        <p>Github</p>
+      </div>
+      <div class="col-foot">
+        <a href="https://www.facebook.com/Vincenttt.05/">
+        <i class="fa-brands fa-facebook"></i>
+        </a>
+        <p>Facebook</p>
+      </div>
+      <div class="col-foot">
+        <a href="https://www.instagram.com/vinxccz/">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        <p>Instagram</p>
+      </div>
+      <div class="col-foot">
+        <a href="">
+        <i class="fa-brands fa-telegram"></i>
+        </a>
+        <p>Telegram</p>
+      </div>
+    </div>
+    <form>
+      <input type="text" name = "email" id = "email" placeholder="Enter your email address">
+      <button id = "send-btn">Send</button>
+    </form>
+    <p id = "bot-text">@2023 Quizee.All Rights Reserved.</p>
+  </footer>
+</body>
+<script>
+  
+    document.addEventListener("keypress", function(event){
+    window.location.href = "login.html";
+    });
+
+</script>
+</html>

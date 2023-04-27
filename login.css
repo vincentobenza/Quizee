@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=PT+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+}
+body{
+    background-color: #030916;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    cursor: pointer;
+}
+.container{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    padding: 80px 0;
+}
+.container h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    animation: animate 1s;
+    background: linear-gradient(180deg, #968fe7 0%, #905ce4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container p{
+    animation: animate 2s;
+    color: rgb(180, 178, 178);
+}
+.container input{
+    margin-top: 80px;
+    width: 80%;
+    height: 60px;
+    padding-left: 20px;
+    background-color: transparent;
+    color: #eee8e8;
+    font-size: 18px;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #bebfc0 1px;
+    font-family: 'Nova Square', cursive;
+    letter-spacing: 1px;
+    animation: slide 1s;
+}
+.container input:focus{
+    border-bottom: solid #d8d8d5 3px;
+}
+::placeholder{
+    color: #c7c1c1;
+}
+.container button{
+    width: 150px;
+    height: 55px;
+    color: #fff;
+    margin-top: 50px;
+    background: linear-gradient(150.61deg, #512fcc 18.02%, #4931cc 84.94%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in;
+    margin-bottom: 40px;
+}
+.container button:hover{
+    transform: translateY(-5px);
+}
+.fa-arrow-right{
+    position: relative;
+    left: 12px;
+    top: 1px;
+}
+
+@keyframes animate{
+
+    0%{
+        opacity: 0; 
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes slide {
+
+    0%{
+        opacity: 0; 
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@media(max-width: 700px){
+    .container{
+        width: 80%;
+    }
+    .container h1{
+        font-size: 28px;
+    }
+    .container p{
+        font-size: 12px;
+    }
+    .container input{
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    ::placeholder{
+        font-size: 12px;
+    }
+    .container button{
+        width: 140px;
+        height: 45px;
+        margin-top: 80px;
+    }
+    .logo{
+        left: 0px;
+    }
+}

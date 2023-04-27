@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizee</title>
+    <link rel = "icon" href = "https://cdn-icons-png.flaticon.com/512/9948/9948975.png" type = "images">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 240px;
+        background-color: #030916;
+    }
+    .spinner {
+        position: relative;
+        width: 15.7px;
+        height: 15.7px;
+   }
+
+    .spinner div {
+       animation: spinner-4t3wzl 1.875s infinite backwards;
+       background-color: #484ad6;
+       border-radius: 50%;
+       height: 100%;
+       position: absolute;
+       width: 100%;
+    }
+    
+    .spinner div:nth-child(1) {
+       animation-delay: 0.15s;
+       background-color: rgba(71,75,255,0.9);
+    }
+    
+    .spinner div:nth-child(2) {
+       animation-delay: 0.3s;
+       background-color: rgba(71,75,255,0.8);
+    }
+    
+    .spinner div:nth-child(3) {
+       animation-delay: 0.45s;
+       background-color: rgba(71,75,255,0.7);
+    }
+    
+    .spinner div:nth-child(4) {
+       animation-delay: 0.6s;
+       background-color: rgba(71,75,255,0.6);
+    }
+    
+    .spinner div:nth-child(5) {
+       animation-delay: 0.75s;
+       background-color: rgba(71,75,255,0.5);
+    }
+    
+    @keyframes spinner-4t3wzl {
+       0% {
+          transform: rotate(0deg) translateY(-200%);
+       }
+    
+       60%, 100% {
+          transform: rotate(360deg) translateY(-200%);
+       }
+    }
+
+    p{
+        position: absolute;
+        top: 400px;
+        left: 550px;
+        color: #a8a2a2;
+        letter-spacing: 1px;
+    }
+</style>
+<body>
+    <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div><br>
+      <p>Preparing your quiz please wait...</p>
+</body>
+<script>
+    
+    function startLoad(duration){
+
+setTimeout(function() {
+if (duration === 10000) {
+ window.location.href = "quiz.html";
+}
+}, duration);
+}
+startLoad(10000, function(){})
+</script>
+</html>
